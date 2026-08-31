@@ -1,0 +1,138 @@
+:root {
+    --bg-color: #F5F5F5;
+    --second-bg-colour: #E0E0E0;
+    --text-colour: #333333;
+    --main-colour: #0077BE;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+}
+
+span {
+    color: var(--main-colour);
+}
+
+header h1 {
+    color: var(--text-colour);
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line on small screens */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin: 0 5px;
+    border-radius: 5px;
+    flex: 1 1 auto; /* Allows buttons to grow to fill space */
+    min-width: 120px;
+    padding: 15px 10px; /* Larger tap target for fingers */
+    font-weight: bold;
+}
+
+.tab-link:hover {
+    background-color: #bbb;
+}
+
+.tab-link.active {
+    background-color: #333;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: var(--second-bg-colour);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.gallery img {
+    
+    width: 100%; 
+    aspect-ratio: 1 / 1; /* Keeps them square like your 3264x3264 dims */
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+}
+
+.gallery {
+    gap: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
+}
+
+
+/* Mobile Specific Tweaks */
+
+@media screen and (max-width: 600px) {
+body {
+padding: 10px;
+}
+header h1 {
+font-size: 1.5rem; /* Smaller text for smaller screens */
+}
+.tab-link {
+font-size: 14px;
+padding: 12px 5px;
+}
+}
+
+#mockups .gallery img {
+    aspect-ratio: 1600 / 1066;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+}
+
+/* The Pop-up (Modal) Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

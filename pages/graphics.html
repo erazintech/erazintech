@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design</title>
+    <link rel="stylesheet" href="/css/graphics.css">
+    </head>
+
+
+    <body>
+
+        <header>
+            <h1>Explore <span>Our</span> Graphic <span>Designs</span></h1>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'logos')">Logos</button>
+            <button class="tab-link" onclick="openTab(event, 'miscellaneous')">Miscellaneous</button>
+            <button class="tab-link" onclick="openTab(event, 'posters')">Posters</button> 
+        </div>
+
+        <div id="logos" class="tab-content active">
+            <div class="gallery">
+                <img src="/images/graphics/logos/1.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/2.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/3.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/4.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/5.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/6.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/7.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/8.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/9.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/10.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/11.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/logos/12.png" alt="Logo Design" onclick="showImage(this)" >
+            </div>
+        </div>
+
+        <div id="miscellaneous" class="tab-content">
+            <div class="gallery">
+                <img src="/images/graphics/Mdesigns/1.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/2.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/3.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/4.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/5.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/6.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/7.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/8.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/9.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/10.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/11.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/12.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/13.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/14.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/15.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/16.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/17.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/18.png" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/Mdesigns/19.jpg" alt="Logo Design" onclick="showImage(this)" >
+            </div>
+        </div>
+
+        <div id="posters" class="tab-content">
+            <div class="gallery">
+                <img src="/images/graphics/posters/1.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/2.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/3.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/4.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/5.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/6.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/7.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/8.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/9.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/10.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/11.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/12.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/13.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/14.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/15.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/16.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/17.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/18.jpg" alt="Logo Design" onclick="showImage(this)" >
+                <img src="/images/graphics/posters/19.jpg" alt="Logo Design" onclick="showImage(this)" >
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+        <script src="/js/graphics.js"></script>
+    </body>
+</html>

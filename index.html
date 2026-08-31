@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eraz Intech | Your Partner in Tech Innovation</title>
+    <link rel="icon" href="/images/tech.png">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- main css -->
+    <link rel="Stylesheet" href="/css/main.css"> 
+
+    <!-- ZARE CHATBOT -->
+     <link rel="stylesheet" href="/css/chatbot.css">
+
+</head>
+
+<body>
+
+    <!--header design -->
+    <header class="header">
+        <a href="#" class="logo">ERAZ INTECH</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i> 
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#project">Projects</a>
+            <a href="#review">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section design -->
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <img id="desktop-image" src="/images/desktopimage.png" alt="">
+            <img id="mobie-image" src="/images/mobileimage.png" alt="">
+            <h1>Eraz Intech</h1>
+            <h3><span class="multiple-text"  ></span></h3>
+            <p>Eraz Intech delivers innovative graphic design, architectural plans, and technical drawings.<br> We blend creativity and technology to bring your visions to life.</p>
+            
+            <div class="hys" id="hys">
+                <a href="/pages/quote.html" class="btn"> GET A QUOTE</a>
+            </div>
+            
+        </div>
+        
+        <div class="eras-img">
+            <img id="desktop-image" src="/images/desktopimage2.png" alt="">
+            <img id="mobile-image" src="/images/mobileimage2.png" alt="">
+        </div>
+        
+
+    </section>
+
+    <!-- services section design -->
+
+    <section class="services" id="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-palette ' ></i>
+                <h3>Graphic Design</h3>
+                <p>We create compelling visual identities and communication materials that make your brand unforgettable.
+                   From logos and brand packages to
+                   eye-catching social media graphics.
+                </p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx  bx-ruler'  ></i> 
+                <h3>Drawing Drafting</h3>
+                <p>We specialize in creating precise and detailed technical drawings for all phases of your project.
+                   Our expert team ensures accuracy and efficieny, helping 
+                   you save time and resources. 
+                </p>
+            </div>
+
+            <div class="services-box">
+                <i class='bx  bx-building-house' ></i>
+                <h3>Architectural Design</h3>
+                <p>We craft stunning building plans and sectional drawings. From initial concept to final blueprint.
+                    Our expert team ensures precision and accuracy in every detail.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section design -->
+
+    <section class="project" id="project">
+        <h2 class="heading">Our <span>Projects</span></h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <img src="/images/1.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Graphic Designs</h4>
+
+                    <a href="/pages/graphics.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="/images/2.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Architectural Designs</h4>
+
+                    <a href="/pages/architectural.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="/images/3.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Drawing Draftings</h4>
+
+                    <a href="/pages/drawing.html"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZARE CHATBOT -->
+     <div id="chatbot-icon" class="chatbot-icon">
+        <img src="/images/bot.png">
+    </div>
+
+    <div id="chatbot-container" class="chatbot-container">
+        <div class="chatbot-header">
+            <div class="header-content">
+                <h3>BOT ZARE</h3>
+                <p class="status">Online</p>
+            </div>
+            <button id="close-chat" class="close-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div id="chat-messages" class="chat-messages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Hello! I'm BOT ZARE. I can help answer questions about our architectural designs, graphic design services, and drawing drafting services. How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+            <button id="send-btn" class="send-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- customer review section -->
+
+    
+    
+     <section class="review" id="review">
+        <div class="reviews-container">
+            <h2 class="reviews-heading">Customer <span>Reviews</span></h2>
+            
+            <div class="reviews-wrapper">
+                <!-- Left Column -->
+                <div class="reviews-column left-column">
+                    <div class="review-card" data-review="1">
+                        <div class="review-header">
+                            <img src="/images/reviews/1.jpg" alt="Customer" class="customer-image">
+                            <div class="customer-info">
+                                <h3 class="customer-name">Mr Shipanga Wilbard</h3>
+                                <div class="star-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star empty-star">☆</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-comment">I am thoroughly impressed with the building plan and graphic designs provided by Eraz Intech. The attention to detial and innovative solutions are evi...</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+
+                    <div class="review-card" data-review="2">
+                        <div class="review-header">
+                            <img src="/images/reviews/2.jpg" alt="Customer" class="customer-image">
+                            <div class="customer-info">
+                                <h3 class="customer-name">Ms. Emilie Endjala</h3>
+                                <div class="star-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-comment">I had a fantastic experience with Erazintech. Their customer service was top-notch, friendly, responsive, and super proffesional throughout the entire process...</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+
+                    <div class="review-card" data-review="3">
+                        <div class="review-header">
+                            <img src="/images/reviews/3.jpg" alt="Customer" class="customer-image">
+                            <div class="customer-info">
+                                <h3 class="customer-name">Mr Filemon Shalonda</h3>
+                                <div class="star-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-comment">The best and most affordable quality designs i have come across. The level of proffesionalism, creativity and attention to detial is truly understanding. This is a cle...</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="reviews-column right-column">
+                    <div class="review-card" data-review="4">
+                        <div class="review-header">
+                            <img src="/images/reviews/4.jpg" alt="Customer" class="customer-image">
+                            <div class="customer-info">
+                                <h3 class="customer-name">Becelecia Cashloan</h3>
+                                <div class="star-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-comment">We are delighted to give ErazIntech a five-star rating for the expectional work and creativity they poured into our new logo design. The final product has excee...</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+
+                    <div class="review-card" data-review="5">
+                        <div class="review-header">
+                            <img src="/images/reviews/5.jpg" alt="Customer" class="customer-image">
+                            <div class="customer-info">
+                                <h3 class="customer-name">Ms. Saima Ionga</h3>
+                                <div class="star-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star empty-star">☆</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-comment">I am leaving a glowing four-star review for ErazIntech! They provided me with truly expectional architectural design services. From the initial consultation all...</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+
+                    <div class="review-card" data-review="6">
+                        <div class="review-header">
+                            <img src="/images/reviews/6.jpg" alt="Customer" class="customer-image">
+                            <div class="customer-info">
+                                <h3 class="customer-name">ForOne Trading CC</h3>
+                                <div class="star-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star empty-star">☆</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-comment">I Highly recommend ErazIntech for logo design services. They truly know how to follow instructions and have a great ability to turn complexity into simplicity. Their attention to detial is impres...</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hys" id="hys">
+            <a href="/pages/review.html" class="b"> Leave Your Review</a>
+        </div>
+        
+    </section>
+
+
+
+    <!-- Modal for Full Review -->
+    <div class="modal" id="reviewModal">
+        <div class="modal-content">
+           
+            <div class="modal-header">
+                <img src="" alt="Customer" class="modal-customer-image" id="modalImage">
+                <div class="modal-customer-info">
+                    <h2 class="modal-customer-name" id="modalName"></h2>
+                    <div class="modal-star-rating" id="modalRating"></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-review-text" id="modalComment"></p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us!</span></h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="input-box">
+                <input type="text" name="Full Name" placeholder="Full Name">
+                <input type="email" name="Email Address" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="hidden" name="access_key" value="44b2db44-6d24-4e27-ad9e-becf8e6a557c">
+                <input type="number" name="Mobile Number" placeholder="Mobile Number">
+                <input type="text" name="Email Subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+            
+            <div class="social-media">
+                <a href="https://wa.me/message/BMJQJO33CWQDI1" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://www.instagram.com/e_r_az_?igsh=cnBkMTNteDFzcTM=" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                <a href="tel:+264818256896" target="_blank"><i class='bx  bx-phone' ></i></a>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>COPYRIGHT &copy; 2025 BY ERAZINTECH || All RIGHTS RESERVED.</p>
+        </div>
+
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- main js -->
+     <script src="/js/main.js"></script>
+     <script src="/js/chatbot.js"></script>
+     <script src="/js/reviewpopup.js"></script>
+</body>
+
+</html>

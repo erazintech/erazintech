@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eraz Intech | Your Partner in Tech Innovation</title>
+    <link rel="icon" href="/images/tech.png">
+    <link rel="stylesheet" href="/css/architectural.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore <span>Our</span> Plans</h1>
+    </header>
+
+    <main class="plans-container">
+        <div class="plan-card">
+            <img src="/images/architectural/1.jpg" alt="Morden Villa">
+            <h3>The Solo Haven</h3>
+            <p>Master bedroom<br> Open-Plan Lounge<br> Inviting Front Porch<br>Modern En-suite Bathroom</p>
+            <button class="request-btn" onclick="openModal('The Solo Haven')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/2.jpg" alt="Morden Villa">
+            <h3>The Horizon 3-Bedroom Villa</h3>
+            <p>Smart Utility Placement<br>Expansive Open-Plan Living<br>Integrated Parking & Access<br>Two Additional Family Bedrooms<br>Master Suite with En-Suite Bathroom</p>
+            <button class="request-btn" onclick="openModal('The Horizon 3-Bedroom Villa')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/3.jpg" alt="Morden Villa">
+            <h3>The Dual-Haven Cottage</h3>
+            <p>Bedroom<br>Master bedroom<br>Open-Plan Lounge<br>Expansive L-Shaped Porch</p>
+            <button class="request-btn" onclick="openModal('The Dual-Haven Cottage')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/4.jpg" alt="Morden Villa">
+            <h3>The Vista 60</h3>
+            <p>lounge<br>Bedroom<br>Bathroom<br>Master bedroom<br>Spacious Covered Porch</p>
+            <button class="request-btn" onclick="openModal('The Vista 60')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/5.jpg" alt="Morden Villa">
+            <h3>The Amber Terrace</h3>
+            <p>Bedroom<br>Bathroom<br>Master Bedroom<br>Central Living Hub<br></p>
+            <button class="request-btn" onclick="openModal('The Amber Terrace')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/6.jpg" alt="Morden Villa">
+            <h3>The Bella Twin Suite</h3>
+            <p>Two Bedrooms<br>Optimized Footprint<br>Centralized Utility Hub</p>
+            <button class="request-btn" onclick="openModal('The Bella Twin Suite')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/7.jpg" alt="Morden Villa">
+            <h3>The Gemini Duplex</h3>
+            <p>Two Bedrooms<br>Private Entrances<br>Twin Independent Units</p>
+            <button class="request-btn" onclick="openModal('The Gemini Duplex')">Request Details</button>
+        </div>
+
+        <div class="plan-card">
+            <img src="/images/architectural/8.jpg" alt="Morden Villa">
+            <h3>The Sky-View Suite</h3>
+            <p>Integrated Porch<br>Streamlined Hallway<br>Central Lounge & Hub<br>Dual Private Bedrooms<br></p>
+            <button class="request-btn" onclick="openModal('The Sky-View Suite')">Request Details</button>
+        </div>
+
+    </main>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Plan Information</h2>
+            <p> Thank you for your interest.<br>Our Architectural team will provide full dimensions and technical specs upon request.<br><br>To submit your query directly via WhatsApp, simply copy this message, click the WhatsApp button, paste it into the chat, and send</p>
+            <div class="modal-footer">
+                <button class="close-btn" onclick="closeModal()">Close</button>
+                <button class="copy-btn" onclick="copyModalText()">Copy Message</button>
+                <a href="https://wa.me/message/BMJQJO33CWQDI1" target="_blank" class="external-link-btn"><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/architectural.js"></script>
+</body>
+</html>
